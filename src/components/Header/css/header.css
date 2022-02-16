@@ -1,0 +1,112 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@200&display=swap");
+header {
+  background: -webkit-gradient(linear, left top, left bottom, from(white), to(#f2f5fa));
+  background: linear-gradient(180deg, white 0%, #f2f5fa 100%);
+  width: 100%;
+  height: 66px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+header .logo {
+  margin: 0 0 0 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 25px;
+  height: 40px;
+}
+
+header .logo h1 {
+  display: none;
+}
+
+header .menu-list {
+  width: 206px;
+  height: 24px;
+  margin: 8px 0 0 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+header .menu-list ul {
+  width: 100%;
+  padding: 0;
+  list-style: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+header .menu-list ul li {
+  display: inline;
+  width: 100%;
+  margin: 0 20px 0 0;
+}
+
+header .menu-list ul li a {
+  color: #6A707B;
+  font-size: 14px;
+  white-space: nowrap;
+  font-family: Arial, Helvetica, sans-serif;
+  word-spacing: 0.5px;
+}
+
+@media only screen and (min-width: 400px) {
+  header {
+    position: relative;
+    top: 100px;
+    margin: 0px 0 0 0px;
+    background: transparent;
+    width: 100%;
+    height: 66px;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  header .logo {
+    margin: 0 0 0 10px;
+    width: 118px;
+  }
+  header .logo h1 {
+    display: block;
+    margin: 10px 0px 0 14px;
+    color: #131821;
+    font-size: 14px;
+    font-weight: 400;
+  }
+  header .menu-list {
+    margin: 8px 10px 0 0;
+  }
+}
+
+@media only screen and (min-width: 760px) {
+  header .menu-list {
+    margin: 8px 100px 0 0;
+  }
+  header .logo {
+    margin: 0 0 0 100px;
+  }
+}
+/*# sourceMappingURL=header.css.map */

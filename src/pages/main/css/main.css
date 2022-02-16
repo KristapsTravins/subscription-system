@@ -1,0 +1,74 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@200&display=swap");
+.main {
+  width: 99.8vw;
+  height: 99.8vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.main .left_side {
+  background-image: url("../../../tools/image_summer.png");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.main .right_side {
+  display: none;
+}
+
+@media only screen and (min-width: 400px) {
+  .main {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .main .left_side {
+    background: -webkit-gradient(linear, left top, left bottom, from(white), to(#f2f5fa));
+    background: linear-gradient(180deg, white 0%, #f2f5fa 100%);
+    width: 680px;
+    min-width: 400px;
+    height: 100vh;
+  }
+  .main .right_side {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    background-image: url("../../../tools/image_summer.png");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100%;
+    width: 100%;
+  }
+}
+
+@media only screen and (min-width: 760px) {
+  .main .left_side {
+    background: -webkit-gradient(linear, left top, left bottom, from(white), to(#f2f5fa));
+    background: linear-gradient(180deg, white 0%, #f2f5fa 100%);
+    min-width: 680px;
+  }
+}
+/*# sourceMappingURL=main.css.map */
