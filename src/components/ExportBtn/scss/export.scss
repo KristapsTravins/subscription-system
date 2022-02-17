@@ -1,0 +1,23 @@
+@import'../../../variables/mixins.scss';
+
+.exportBtn{
+    margin: 0 9px 0 0;
+    width: 96px;
+    height: 32px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    @include admin_box_shadow;
+    span{
+        font-size: 15px;
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
+    }
+}
+.exportBtn:hover{
+    cursor: pointer;
+   
+}
+.exportBtn:active{
+    position: relative;
+    margin: 1px;
+}

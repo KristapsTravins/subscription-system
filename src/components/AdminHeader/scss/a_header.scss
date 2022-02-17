@@ -1,7 +1,15 @@
 @import'../../../variables/mixins.scss';
 
 .admin_header{
-    width: 100%;
+    margin: 20px 0 0 0;
     height: 50px;
-    @include scaffolding;
+    display: flex;
+    justify-content: flex-end;
+    width: 100%;
+    .admin_btns{
+        width: 400px;
+        display: flex;
+        
+        
+    }
 }

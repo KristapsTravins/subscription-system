@@ -2,8 +2,21 @@
 @import url("https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@200&display=swap");
 /* aminPage */
 .admin_header {
-  width: 100%;
+  margin: 20px 0 0 0;
   height: 50px;
-  border: 0.1px dotted black;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  width: 100%;
+}
+
+.admin_header .admin_btns {
+  width: 400px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 /*# sourceMappingURL=a_header.css.map */

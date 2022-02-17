@@ -1,0 +1,44 @@
+@import'../../../variables/mixins.scss';
+
+.dropdown_main{
+    display: flex;
+    margin: 0 9px 0 0;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 0 0 0 10px;
+    span{
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
+    }
+    @include admin_box_shadow;
+    height: 32px;
+    width: 96px;
+}
+.dropdown{
+    
+    justify-content: center;
+    align-items: center;
+    margin: 7px 0 0 0;
+    span{
+        font-size: 15px;
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
+    }
+    @include admin_box_shadow;
+    height: 32px;
+    width: 106px;
+}
+.dropdown:hover{
+    cursor: pointer;
+}
+.dropdown_main:active{
+    position: relative;
+    margin: 1px 9px 0 0;
+}
+
+#open{
+    display: flex;
+}
+#close{
+    display: none;
+}
+
+

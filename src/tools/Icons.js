@@ -47,6 +47,13 @@ export const Sucsess =(props)=> {
   )
 }
 
+export const FilterIcon =(props)=> {
+  return (
+<svg width={props.width} height={props.height} viewBox="0 0 28 35" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path fill-rule="evenodd" clip-rule="evenodd" d="M16.3131 18.0089L28 0.551758H0L11.6887 18.007V34.5518L16.3131 31.7631V18.0089Z" fill="black"/>
+</svg>
+  )
+}
 
 
 
