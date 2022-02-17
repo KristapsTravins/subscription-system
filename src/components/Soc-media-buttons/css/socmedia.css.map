@@ -1,0 +1,10 @@
+{
+    "version": 3,
+    "mappings": "ACAA,OAAO,CAAC,mFAAI;AACZ,OAAO,CAAC,qFAAI;ADCZ,AAAA,cAAc,CAAA;EACV,KAAK,EAAE,IAAI;EACX,MAAM,EAAE,IAAI;EACZ,MAAM,EAAE,GAAG,CAAC,KAAK,CCAL,OAAO;EDCnB,OAAO,EAAE,IAAI;EACb,eAAe,EAAE,MAAM;EACvB,WAAW,EAAE,MAAM;EACnB,aAAa,EAAE,IAAI;CACtB",
+    "sources": [
+        "../scss/socmedia.scss",
+        "../../../variables/mixins.scss"
+    ],
+    "names": [],
+    "file": "socmedia.css"
+}

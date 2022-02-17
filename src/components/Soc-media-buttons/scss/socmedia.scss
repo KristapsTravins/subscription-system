@@ -1,0 +1,11 @@
+@import'../../../variables/mixins.scss';
+
+.soc-media-btn{
+    width: 46px;
+    height: 46px;
+    border: 2px solid $soc-button-col;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 30px;
+}

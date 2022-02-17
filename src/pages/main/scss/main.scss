@@ -11,10 +11,12 @@ display: flex;
     display: flex;
     align-items: center;
     flex-direction: column;
+
 }
 .right_side{
     display: none;
 }
+
 }
 @media only screen and (min-width: 400px) {
     .main{
@@ -26,7 +28,6 @@ display: flex;
             width: 680px;
             min-width: 400px;
             height: 100vh;
-           
         }
         .right_side{
             display: flex;
@@ -42,7 +43,6 @@ display: flex;
     .main{
         .left_side{
             @include bacgroundCol;
-          
             min-width: 680px;
           
         }

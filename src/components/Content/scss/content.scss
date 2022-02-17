@@ -1,0 +1,55 @@
+@import'../../../variables/mixins.scss';
+
+.content_peace{
+    @include bacgroundCol;
+    margin: 200px 0 0 0;
+    max-width: 371px;
+    width: 95%;
+    height: 370px;
+    display: flex;
+    justify-content: center;
+    .content{
+        width: 87%;
+        line-height: 0;
+        padding: 30px 0 0 0;
+        h2{
+            margin: 30px 0 0 0;
+            font-size: 26px;
+            @include text_heading;
+        }
+        p{
+            @include text_style;
+            color:$graytext ;
+            line-height: 25px;
+        }
+        .media_buttons{
+            margin: 25px 0 0 0;
+            height: 80px;
+            border-top: 1px solid $soc-button-col;
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            .media_btn_box{
+                margin: 20px 0 0 0;
+                width: 214px;
+                height: 44px;
+                display: flex;
+                justify-content: space-between;
+            }
+           
+        }
+    }
+}
+@media only screen and (min-width: 400px) {
+    .content_peace{
+        background: transparent;
+        .content{
+            width: 100%;
+        }
+    }
+}
+@media only screen and (max-width: 320px) {
+    .content_peace{
+      height: auto;
+}
+}
