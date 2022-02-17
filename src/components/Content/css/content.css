@@ -6,7 +6,7 @@
   margin: 200px 0 0 0;
   max-width: 371px;
   width: 95%;
-  height: 370px;
+  height: auto;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;

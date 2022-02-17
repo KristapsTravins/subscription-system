@@ -1,7 +1,10 @@
-
+import AdminHeader from '../../components/AdminHeader/AdminHeader'
+import './css/adminpage.css'
 const Admin =()=> {
   return (
-    <div>Admin</div>
+    <div className="admin_panel">
+      <AdminHeader />
+    </div>
   )
 }
 

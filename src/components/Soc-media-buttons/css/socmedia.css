@@ -14,5 +14,48 @@
       -ms-flex-align: center;
           align-items: center;
   border-radius: 30px;
+  -webkit-box-shadow: rgba(0, 0, 0, 0.45) 0px 25px 20px -20px;
+          box-shadow: rgba(0, 0, 0, 0.45) 0px 25px 20px -20px;
+}
+
+.soc-media-btn:hover {
+  cursor: pointer;
+}
+
+#fb:hover {
+  background: #4267B2;
+}
+
+#fb:active {
+  background: #2F4A80;
+}
+
+#insta:hover {
+  background: #C13584;
+}
+
+#insta:active {
+  background: #8F2762;
+}
+
+#twit:hover {
+  background: #1DA1F2;
+}
+
+#twit:active {
+  background: #177FBF;
+}
+
+#yt:hover {
+  background: #FF0000;
+}
+
+#yt:active {
+  background: #CC0000;
+}
+
+.soc-media-btn:hover svg > path {
+  fill: white;
+  z-index: +11;
 }
 /*# sourceMappingURL=socmedia.css.map */

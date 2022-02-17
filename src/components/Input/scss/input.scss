@@ -18,6 +18,26 @@ form{
             border: none;
             border-left: 4px solid #4066A5;
         }
+        input[type="text"]:focus{
+            outline: none;
+            background: white;
+            @include input_border_color_focus;
+        }
+        input[type="text"]:focus + input[type="submit"]{
+         @include input_border_color_focus;
+        }
+        input[type="text"]:hover{
+            @include input_border_color_hover;
+            box-sizing: border-box;
+            cursor: pointer;
+        }
+        input[type="text"]:hover + input[type="submit"]{
+            @include input_border_color_hover;
+            border-right:1px solid #4066A5 ;
+            color: #4066A5;
+            cursor: pointer;
+           }
+        
         input[type="submit"]{
             font-size: 30px;
             background-color: white;

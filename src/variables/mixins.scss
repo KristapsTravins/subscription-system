@@ -3,8 +3,24 @@
 
 $base-col:#201F1F;
 $graytext:#6A707B;
-$soc-button-col:#E3E3E4;
-$title-background-col: linear-gradient(to bott, #11998e, #38ef7d);
+$soc-btn-color:#E3E3E4;
+$fb-color-focus:#4267B2;
+$fb-color-active:#2F4A80;
+$insta-color-focus:#C13584;
+$insta-color-active:#8F2762;
+$twitter-color-focus:#1DA1F2;
+$twitter-color-active:#177FBF;
+$yt-color-focus:#FF0000;
+$yt-color-active:#CC0000;
+/* aminPage */
+$bacground-admin:#418250;
+$admin-btns:#dce39f;
+$admin-th:#4bbd4f;
+$admin-fr:#6fd686;
+
+
+
+
 
 @mixin text_style{
 font-family: Arial, Helvetica, sans-serif;
@@ -14,7 +30,19 @@ font-weight: 400;
     font-family: Georgia, 'Times New Roman', Times, serif;
     font-weight: 400;
     line-height: 34px;
-   
+}
+@mixin input_border_color_focus {
+    box-shadow: rgba(33, 35, 38, 0.1) 0px 10px 10px -10px;
+}
+@mixin input_border_color_hover {
+    border-top: 1px solid #4066A5;
+    border-bottom:1px solid #4066A5 ;
+    box-shadow: rgba(33, 35, 38, 0.1) 0px 10px 10px -10px;
+}
+    
+@mixin input_border_color_error {
+    border: 1px solid #B80808;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 20px 25px -5px, rgba(0, 0, 0, 0.04) 0px 10px 10px -5px;
 }
 @mixin scaffolding {
     border: 0.1px dotted black;

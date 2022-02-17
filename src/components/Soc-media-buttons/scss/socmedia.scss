@@ -3,9 +3,42 @@
 .soc-media-btn{
     width: 46px;
     height: 46px;
-    border: 2px solid $soc-button-col;
+    border: 2px solid $soc-btn-color;
     display: flex;
     justify-content: center;
     align-items: center;
     border-radius: 30px;
+    box-shadow: rgba(0, 0, 0, 0.45) 0px 25px 20px -20px;
+}
+.soc-media-btn:hover{
+    cursor: pointer;
+}
+#fb:hover{
+    background: $fb-color-focus;
+}
+#fb:active{
+    background: $fb-color-active;
+}
+#insta:hover{
+    background: $insta-color-focus;
+}
+#insta:active{
+    background: $insta-color-active;
+}
+#twit:hover{
+    background: $twitter-color-focus
+}
+#twit:active{
+    background: $twitter-color-active;
+}
+#yt:hover{
+    background: $yt-color-focus;
+}
+#yt:active{
+    background: $yt-color-active;
+}
+
+.soc-media-btn:hover svg > path{
+    fill: rgb(255, 255, 255);
+    z-index: +11;
 }

@@ -2,7 +2,7 @@ import './css/socmedia.css';
 
 const SocMediaBtn = (props)=> {
   return (
-    <div className='soc-media-btn'>
+    <div id={props.id} className='soc-media-btn'>
         {props.icon}
     </div>
   )

@@ -8,14 +8,15 @@ const Content = () => {
   return (
     <div className='content_peace'>
      <div className='content'>
-       <Sucsess width="44px" height="70px" />
-        <ContentHead heading="Thanks for subscribing!" heading_text="You have successfully subscribed to our email listing. Check your email for the discount code." />
+      {/*  <Sucsess width="44px" height="70px" /> */}
+        <ContentHead heading="Subscribe to newsletter" heading_text="Subscribe to our newsletter and get 10% discount on pineapple glasses." />
+        <Input />
         <div className='media_buttons'>
             <div className='media_btn_box'>
-              <SocMediaBtn icon={<FB width="16px" height="16px" />} />
-              <SocMediaBtn icon={<Insta width="16px" height="16px" />} />
-              <SocMediaBtn icon={<Twitter width="16px" height="16px" />} />
-              <SocMediaBtn icon={<Ytube width="16px" height="16px" />} />
+              <SocMediaBtn id="fb" icon={<FB width="16px" height="16px" />} />
+              <SocMediaBtn id="insta" icon={<Insta width="16px" height="16px" />} />
+              <SocMediaBtn id="twit"  icon={<Twitter width="16px" height="16px" />} />
+              <SocMediaBtn id="yt"  icon={<Ytube  width="16px" height="16px" />} />
             </div>
         </div>
      </div>
