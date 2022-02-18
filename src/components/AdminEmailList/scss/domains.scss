@@ -1,0 +1,26 @@
+@import'../../../variables/mixins.scss';
+
+.domain_list{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    .domain_btn{
+        width: auto;
+        min-width: 96px;
+        height: 32px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        @include admin_box_shadow;
+        padding: 0 10px 0 10px;
+        font-size: 15px;
+        background: $fb-color-focus;
+        color: white;
+        margin: 5px 3px 0 3px;
+    }
+}
+
+
+.domain_btn:hover{cursor: pointer}
