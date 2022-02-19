@@ -50,8 +50,14 @@ form{
         }
 
     }
+    span{
+        top: 15px;
+        position: relative;
+        font-size: 12px;
+        color: red;
+    }
     .check-field{
-        margin: 25px 0 0 0;
+        margin: 30px 0 0 0;
         height: 28px;
         display: flex;
         align-items: center;
