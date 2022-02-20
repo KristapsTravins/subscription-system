@@ -42,8 +42,12 @@ header{
                     @include text_style;
                     word-spacing: 0.5px;
                 }
+                a:hover{
+                    color: $fb-color-focus;
+                }
 
             }
+            
             
 
         }

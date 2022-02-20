@@ -76,6 +76,12 @@ form{
                 text-decoration: underline;
             }
         }
+        label:hover{
+            a{
+                color: $fb-color-focus;
+                text-decoration: underline;
+            }
+        }
     }
     
 }

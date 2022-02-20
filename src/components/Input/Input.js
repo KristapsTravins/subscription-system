@@ -12,7 +12,6 @@ const Input = ()=> {
     SendSub(data);
     Sub.SetIsSubscribed(true);
   };
-
   return (
    <form onSubmit={handleSubmit(onSubmit)}>
        <div className='input-field'>
