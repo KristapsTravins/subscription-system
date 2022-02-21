@@ -1,63 +1,34 @@
 import './css/emails.css';
 import { DeleteX } from '../../tools/Icons';
+import { useContext } from 'react';
+import { EmailContext } from '../../pages/admin/Admin';
 
- const EmailList =()=> {
+const EmailList =()=> {
+    const EmailData = useContext(EmailContext);
+    new Array(EmailData.Emails.length).fill().map((a,i)=>{
+        console.log(i)
+    })
   return (
     <div className="emailList">
-        <div className='email'>
-            <span>kristapstravins@gmail.com</span>
-            <span>22 / 02 / 22</span>
-            <DeleteX width='24px' height='24px' />
-        </div>
-        <div className='email'>
-            <span>kristapstravins@gmail.com</span>
-            <span>22 / 02 / 22</span>
-            <DeleteX width='24px' height='24px' />
-        </div>
-        <div className='email'>
-            <span>kristapstravins@gmail.com</span>
-            <span>22 / 02 / 22</span>
-            <DeleteX width='24px' height='24px' />
-        </div>
-        <div className='email'>
-            <span>kristapstravins@gmail.com</span>
-            <span>22 / 02 / 22</span>
-            <DeleteX width='24px' height='24px' />
-        </div>
-        <div className='email'>
-            <span>kristapstravins@gmail.com</span>
-            <span>22 / 02 / 22</span>
-            <DeleteX width='24px' height='24px' />
-        </div>
-        <div className='email'>
-            <span>kristapstravins@gmail.com</span>
-            <span>22 / 02 / 22</span>
-            <DeleteX width='24px' height='24px' />
-        </div>
-        <div className='email'>
-            <span>kristapstravins@gmail.com</span>
-            <span>22 / 02 / 22</span>
-            <DeleteX width='24px' height='24px' />
-        </div>
-        <div className='email'>
-            <span>kristapstravins@gmail.com</span>
-            <span>22 / 02 / 22</span>
-            <DeleteX width='24px' height='24px' />
-        </div>
-        <div className='email'>
-            <span>kristapstravins@gmail.com</span>
-            <span>22 / 02 / 22</span>
-            <DeleteX width='24px' height='24px' />
-        </div>
-        <div className='email'>
-            <span>kristapstravins@gmail.com</span>
-            <span>22 / 02 / 22</span>
-            <DeleteX width='24px' height='24px' />
-        </div>
+        {EmailData.Emails.map(x=>{
+            return(
+            <div className='email'>
+                <span>{x.email}</span>
+                <span>{x.date}</span>
+                <DeleteX width='24px' height='24px' />
+            </div>
+            )
+        })}
+     
         <div className='pagination'>
-            <span>1</span>
+            {new Array(Math.ceil(EmailData.Emails.length/10)).fill().map((i,a)=>{
+                return(
+                    <span>{a+1}</span>
+                )
+            })}
+            {/* <span>1</span>
             <span>2</span>
-            <span>3</span>
+            <span>3</span> */}
         </div>
     </div>
   )

@@ -9,3 +9,16 @@ export const SendSub = (body)=>{
         }
       });
 }
+
+
+
+
+
+export const GiveAllEmails = axios({
+        method: 'get',
+        url: 'http://localhost:3001/',
+        responseType: 'stream'
+      })
+        .then(resp=>{
+            return resp.data
+        });
