@@ -9,16 +9,16 @@ export const SendSub = (body)=>{
         }
       });
 }
+export const DeleteSub = (id)=>{
+  axios({
+      method: 'delete',
+      url: apiUrl,
+      data:{
+          "id":id
+      }
+    });
+}
 
-
-
-
-
-export const GiveAllEmails = axios({
-        method: 'get',
-        url: 'http://localhost:3001/',
-        responseType: 'stream'
-      })
-        .then(resp=>{
-            return resp.data
-        });
+export const GiveAllEmails = ()=>{ return fetch('http://localhost:3001/')
+.then(response => response.json())
+.then(data =>  data)}
