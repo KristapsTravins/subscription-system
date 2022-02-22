@@ -42,12 +42,3 @@ export const GiveAllEmailDomains = ()=>{ return fetch(apiUrl)
     return uniqeEmails;
   })
 }
-/* export const GiveSpecofocDomainEmail = ()=>{return fetch(apiUrl)
-  .then(response => response.json())
-  .then(data => {
-    let emailsD= [];
-    data.map(a=>emailsD.push(a.email.substring(a.email.indexOf('@'))));
-    let uniqeEmails = [...new Set(emailsD)];
-    return uniqeEmails;
-  })
-} */
