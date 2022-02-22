@@ -2,43 +2,31 @@ import './css/emails.css';
 import { DeleteX } from '../../tools/Icons';
 import { useContext, useState,useEffect } from 'react';
 import { EmailContext } from '../../pages/admin/Admin';
-import { GiveAllEmails } from '../../api/apiCalls'
 
 import { DeleteSub} from '../../api/apiCalls';
 
-const EmailList =()=> {
+const EmailList =(props)=> {
     const EmailData = useContext(EmailContext);
-    const [fromTo,setFromTo] = useState([0,10]);    
-    const [shownEmail,setShown] = useState([]);
-    const a = async()=>{
-        setShown(await GiveAllEmails());
-    }
-    useEffect(() => {
-        console.log('rerendered!!!')
-        a();
-      }, [shownEmail])
+    const [fromTo,setFromTo] = useState([0,10]);
 
-    
-    
-    
-    
   return (
     <div className="emailList">
-        {shownEmail.slice(fromTo[0],fromTo[1]).map(x=>{
+        {props.shownEmailList.slice(fromTo[0],fromTo[1]).map(x=>{
             return(
-            <div className='email'>
+            <div key={x.id} className='email'>
                 <span>{x.email}</span>
                 <span>{x.date}</span>
-                <DeleteX DelFunct={()=>{
+                <DeleteX DelFunct={async()=>{
                     DeleteSub(x.id);
+                    EmailData.setRerender(!EmailData.rerender);
                 }} width='24px' height='24px' />
             </div>
             )
         })}
         <div className='pagination'>
-            {new Array(Math.ceil(shownEmail.length/10)).fill().map((i,a)=>{
+            {new Array(Math.ceil(props.shownEmailList.length/10)).fill().map((i,a)=>{
                 return(
-                    <span onClick={()=>{
+                    <span key={a} onClick={()=>{
                         setFromTo([a===0?0:a*10,(a+1)*10])}} >{a+1}</span>
                 )
             })}

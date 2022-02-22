@@ -1,14 +1,25 @@
+import { useContext } from 'react';
 import './css/domains.css'
+import { EmailContext } from '../../pages/admin/Admin';
 
- const DomainList =()=> {
+ const DomainList =(props)=> {
+ const EmailData = useContext(EmailContext);
+  
+
   return (
     <div className='domain_list'>
-        <div className='domain_btn'>
-            <span>@span.lv</span>
+      {props.EmailList.map(i=>{
+       return(
+        <div onClick={()=>{
+          
+          EmailData.SetEmailList(EmailData.fullEmailList.filter(email=>email.email.includes(i)));
+
+          
+          }} key={i} className='domain_btn'>
+        <span>{i}</span>
         </div>
-        <div className='domain_btn'>
-            <span>@inbox.lv</span>
-        </div>
+       )
+      })}
     </div>
   )
 }
