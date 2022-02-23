@@ -2,20 +2,19 @@ import './css/input.css'
 import { useForm } from "react-hook-form";
 import { SendSub } from '../../api/apiCalls';
 import { isCo } from '../../tools/validator/validator';
-import { useContext } from 'react';
-import { SubContext } from '../Content/Content';
 
-const Input = ()=> {
-  const Sub = useContext(SubContext);
+
+
+const Input = (props)=> {
   const { register, formState:{errors}, handleSubmit } = useForm({criteriaMode: "all"});
   const onSubmit = (data) => {
     SendSub(data);
-    Sub.SetIsSubscribed(true);
+    props.setSub()
   };
   return (
    <form onSubmit={handleSubmit(onSubmit)}>
        <div className='input-field'>
-           <input  type="text" placeholder='Type your email address here…' {...register("email",{
+           <input  tabIndex="1" aria-labelledby="inputfield"  type="text" placeholder='Type your email address here…' {...register("email",{
                     validate:{
                         isValidEmail:email =>
                         /^(([^<>()[\]\\.,;:\s@\"]+(\.[^<>()[\]\\.,;:\s@\"]+)*)|(\".+\"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/.test(
@@ -29,8 +28,11 @@ const Input = ()=> {
             {errors.email && errors.email.type === "isValidEmail" && <span>You must enter email</span>}
             {errors.email && errors.email.type === "minChars" && <span>Email must be longer than 10 characters</span>}
        <div className='check-field'>
+    
+         
+         <label>
          <input type="checkbox" required/>
-         <label>I agree to <a href="#">terms of service</a></label>
+         I agree to <a href="/admin">terms of service</a></label>
        </div>
    </form>
   )

@@ -7,11 +7,11 @@ function Header() {
              <Pinaple width="25px" height="40px" />
              <h1>pineapple</h1>
         </div>
-        <div className='menu-list'>
-            <ul>
-                <li><a href="#">About</a></li>
-                <li><a href="#">How it works</a></li>
-                <li><a href="#">Contact</a></li>
+        <div className='menu-list' id="select_menu">
+            <ul id="option_list" tabIndex="0" aria-labelledby="select_menu">
+                <li><a href="/admin">About</a></li>
+                <li><a href="/admin">How it works</a></li>
+                <li><a href="/admin">Contact</a></li>
             </ul>
         </div> 
     </header>

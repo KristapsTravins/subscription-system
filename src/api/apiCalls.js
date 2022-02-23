@@ -1,5 +1,6 @@
-const axios = require('axios');
-const apiUrl = 'http://localhost:3001/'
+
+const apiUrl = 'http://159.223.20.30:3001/'
+
 export const SendSub = (body)=>{
   try{
     fetch(apiUrl, {
